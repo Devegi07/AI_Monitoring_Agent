@@ -1,0 +1,19 @@
+name: Repo Health Check
+
+on:
+  workflow_dispatch   # 🔹 only ONE trigger (manual)
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: List files
+        run: ls -la
+
+      - name: Print status
+        run: echo "Repository health check passed"
+
