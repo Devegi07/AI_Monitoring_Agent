@@ -48,4 +48,4 @@ jobs:
         run: |
           echo "Running tests..."
           echo "Forcing a failure for monitoring demo"
-          exit 1
+         
